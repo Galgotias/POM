@@ -9,7 +9,7 @@ import plain.object.Repository.LoginPage;
 
 public class AddnewBillingTypeTest extends SuperTestNG {
 
-	@Test
+	@Test(groups={"add"})
 	public void verifySuccessfullyAddingBillingType(){
 		BasePage bp = new BasePage(driver);
 		LoginPage lp = new LoginPage(driver);
