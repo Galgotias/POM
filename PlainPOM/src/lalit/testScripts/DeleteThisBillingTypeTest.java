@@ -8,7 +8,7 @@ import plain.object.Repository.LoginPage;
 
 public class DeleteThisBillingTypeTest extends SuperTestNG{
 
-	@Test
+	@Test(dependsOnGroups={"add"})
 	public void testDeletebillingType(){
 		BasePage bp = new BasePage(driver);
 		LoginPage lp = new LoginPage(driver);
