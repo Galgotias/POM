@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="25284" started-at="2015-09-20T09:43:30Z" finished-at="2015-09-20T09:43:56Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="25284" started-at="2015-09-20T09:43:30Z" finished-at="2015-09-20T09:43:56Z">
+      <class name="lalit.testScripts.AddnewBillingTypeTest">
+        <test-method status="PASS" signature="preConditions()[pri:0, instance:lalit.testScripts.AddnewBillingTypeTest@3b59be0d]" name="preConditions" is-config="true" duration-ms="15303" started-at="2015-09-20T15:13:30Z" finished-at="2015-09-20T15:13:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preConditions -->
+        <test-method status="PASS" signature="verifySuccessfullyAddingBillingType()[pri:0, instance:lalit.testScripts.AddnewBillingTypeTest@3b59be0d]" name="verifySuccessfullyAddingBillingType" duration-ms="9653" started-at="2015-09-20T15:13:46Z" finished-at="2015-09-20T15:13:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySuccessfullyAddingBillingType -->
+        <test-method status="PASS" signature="postConditions()[pri:0, instance:lalit.testScripts.AddnewBillingTypeTest@3b59be0d]" name="postConditions" is-config="true" duration-ms="312" started-at="2015-09-20T15:13:55Z" finished-at="2015-09-20T15:13:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postConditions -->
+      </class> <!-- lalit.testScripts.AddnewBillingTypeTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
