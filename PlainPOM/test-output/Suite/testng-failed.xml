@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
+<suite name="Failed suite [Suite]" parallel="none">
   <test name="Test(failed)" parallel="none">
     <classes>
-      <class name="lalit.testScripts.AddnewBillingTypeTest">
-        <methods>
-          <include name="verifySuccessfullyAddingBillingType"/>
-        </methods>
-      </class> <!-- lalit.testScripts.AddnewBillingTypeTest -->
       <class name="lalit.testScripts.LoginLogoutTest">
         <methods>
-          <include name="testLoginLogout"/>
+          <include name="postConditions"/>
+          <include name="preConditions"/>
         </methods>
       </class> <!-- lalit.testScripts.LoginLogoutTest -->
+      <class name="lalit.testScripts.AddnewBillingTypeTest">
+        <methods>
+          <include name="postConditions"/>
+          <include name="verifySuccessfullyAddingBillingType"/>
+          <include name="preConditions"/>
+        </methods>
+      </class> <!-- lalit.testScripts.AddnewBillingTypeTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
