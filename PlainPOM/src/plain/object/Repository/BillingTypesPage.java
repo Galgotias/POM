@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class BillingTypesPage extends BasePage {
@@ -30,12 +32,13 @@ public class BillingTypesPage extends BasePage {
 
 	public void deleteThisBillingType() {
 		deleteBillingType_Link.click();
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.alertIsPresent());
+		Alert alert = driver.switchTo().alert();
+		alert.accept();
 	}
 
-	public void handleAlert() {
-		driver.switchTo().alert().accept();
-
-	}
+	
 	public void verifySuccessMessage(){
 	String actual = success_Message.getText();
 	String expected ="Billing type has been successfully deleted.";
