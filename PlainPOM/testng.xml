@@ -6,5 +6,5 @@
       <class name="lalit.testScripts.LoginLogoutTest"/>
       <class name="lalit.testScripts.AddnewBillingTypeTest"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test> 
+</suite> 
